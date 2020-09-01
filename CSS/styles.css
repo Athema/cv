@@ -1,0 +1,184 @@
+body {
+    margin: 0px;
+    color: #40514E;
+    text-align: center;
+    /*doesn't work for elements with width set*/
+    font-family: 'Merriweather', serif;
+    /*left main, right backup or fallback(s) -web safe fonts!!!!!!!!!!!!!!!!!! cssfontstack.com*/
+    /*Solution to make everybody see the font we want: fonts.google.com as EMBEDDED FONT*/
+    /*Font size is inherited instead of overriden; children 
+    elements will add size on top of the body basic one WHEN using % or EM, 
+    unless we use static px sizes or Relative EM - rem - RECOMMENDED*/
+    /*https://www.sitepoint.com/understanding-and-using-rem-units-in-css/*/
+}
+
+h1 {
+    margin: 50px auto 0 auto;
+    /*margin auto centering useful for blocking elements*/
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    /*16px = 100% = 1em*/
+    color: #66BFBF;
+    line-height: 1;
+    /*default*/
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    /*40 pixels target / 16 px in 1 em*/
+    color: #66BFBF;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+p {
+    line-height: 2;
+}
+
+hr {
+    border: dotted #eaf6f6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+
+a {
+    color: #11999E;
+    font-family: "Montserrat", sans-serif;
+    margin: 10px 15px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #eaf6f6;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    padding-top: 100Px;
+    position: relative;
+}
+
+.middle-container {
+    margin: 100px 0;
+    /*top bottom and left rigth*/
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 20px 0;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+}
+
+.contact-message {
+    width: 40%;
+    line-height: 2;
+    margin: 40px auto 60px;
+    /*top LR bottom*/
+}
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    /*parent must be set to relative or it will reference the body*/
+    left: 250;
+    bottom: 300px;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.AAE-Image {
+    margin-left: 30px;
+    width: 35%;
+    float: right;
+    /*clear property cancels wrapping with float*/
+}
+
+.SFDC-Image {
+    margin-right: 30px;
+    width: 35%;
+    float: left;
+}
+
+.btn {
+    background-color: #11cdd4;
+    -webkit-border-top-left-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-right-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -moz-border-radius-bottomright: 8px;
+    border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -moz-border-radius-bottomleft: 8px;
+    border-bottom-left-radius: 8px;
+    text-indent: 0;
+    border: 1px solid #468b8d;
+    display: inline-block;
+    color: #ffffff;
+    font-family: arial;
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    height: 50px;
+    line-height: 50px;
+    width: 140px;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0px #0d6063;
+    padding: 0 10px 0 10px;
+}
+
+.btn:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b5e9eb), color-stop(1, #11cdd4));
+    background: -moz-linear-gradient( center top, #b5e9eb 5%, #11cdd4 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#b5e9eb', endColorstr='#11cdd4');
+    background-color: #b5e9eb;
+}
+
+.btn:active {
+    position: relative;
+    top: 1px;
+}
+
+.copyright {
+    color: #eaf6f6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+
+/*
+display property: 
+inline - no width control, same line (a, span)
+block - width control, blocks other elements from being on the same line (h1, p)
+inline block - width control, same line (image)
+none - gets rid of the element
+
+*/
